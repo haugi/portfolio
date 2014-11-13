@@ -1,0 +1,359 @@
+/*
+Theme Name: Portfolio
+Theme URI: http://wordpress.org/themes/portfolio
+Author: Markus Haug
+Author URI: http://wordpress.org/
+Description: A wordpress portfolio template
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: Portfolio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.headerTitle {
+	margin-bottom: 5px;
+}
+
+.headerTitle h1 {
+	margin: 0px;
+}
+
+.headerTitle a {
+	text-decoration: none;
+	color: #000;
+}
+
+.headerTitle h2 {
+	margin: 0px;
+	color: #CECECE;
+}
+
+#board {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navigation {
+	width: 100%;
+	text-align: right;
+}
+
+ul.menu {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.menu li{
+	display: inline;
+	margin-left: 10px;
+	position: relative;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #000;
+}
+
+.menu a:hover {
+	text-decoration: underline;
+}
+
+.sub-menu {
+	display: none;
+}
+
+.sub-menu .menu-item a:hover {
+	text-decoration: underline;
+}
+
+.current-menu-item .sub-menu {
+	width: 100%;
+	padding-left: 0px;
+}
+
+.current-menu-item ul.sub-menu {
+	display: block;
+	float: left;
+}
+
+.current-menu-parent .sub-menu {
+	width: 100%;
+	padding-left: 0px;
+}
+
+.current-menu-parent ul.sub-menu {
+	display: block;
+	float: left;
+}
+
+.current-menu-parent {
+	font-weight: 700;
+	/*text-decoration: underline;*/
+}
+
+.current-menu-item a{
+	font-weight: 700;
+	/*text-decoration: underline;*/
+}
+
+.sub-menu .menu-item a {
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.sub-menu .current-menu-item a {
+	font-weight: 700;
+}
+
+.seperator {
+	width: 100%;
+	border-bottom: 1px solid #c7c7c7;
+	margin: 20px 0;
+}
+
+#posts, #single-post {
+	/*width: 600px;*/
+	width: 65%;
+	float: left;
+}
+
+#single-post {
+	position: relative;
+}
+
+.post-thumbnail {
+	position: relative;
+}
+
+.post-thumbnail div {
+    /*background-color: rgba(212,212,212,0.76);*/
+    background-color: rgba(255, 255, 255, 0.87);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+}
+
+
+.post-thumbnail div span {
+	padding: 5px;
+	text-decoration: none;
+	color: #000;
+}
+
+.post-thumbnail img {
+    display: block;
+    width: 100%;
+}
+
+.post-title {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.cat-headline {
+	margin-top: 0px;
+}
+
+#post-item {
+	margin-bottom: 20px;
+}
+
+.post-content {
+	position: relative;
+}
+
+.post-content p {
+	padding-left: 5px;
+	margin-bottom: 0px;
+}
+
+.post-content a {
+	color: #000;
+}
+
+a.more-link {
+	position: absolute;
+	bottom: -15px;
+	right: 0px;
+}
+
+#post-item-link {
+	text-decoration: none;
+	color: #000;
+}
+
+#post-item .date {
+	float: left;
+	padding-left: 5px;
+}
+
+#post-item .author {
+	text-align: right;
+}
+
+#post-item img {
+	max-width: 100%;
+	height: auto;
+}
+
+.date,
+.author {
+	font-size: 12px;
+}
+
+#sidebar {
+	float: right;
+	width: 25%;
+}
+
+#sidebar li {
+	list-style: none;
+}
+
+#sidebar li .widgettitle {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0px;
+}
+
+#sidebar li ul {
+	padding: 0px;
+	margin-top: 0px;
+}
+
+#sidebar a {
+	color: #000;
+	font-size: 14px;
+}
+
+.clear {
+	clear: both;
+}
+
+.tagcloud a {
+	text-decoration: none;
+}
+
+.tagcloud a:hover {
+	text-decoration: underline;
+}
+
+.s75 {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.s50 {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#overlay {	
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(185, 185, 185, 0.83);
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+}
+
+#overlay-content {		
+	max-width: 70%;
+	max-height: 80%;
+	margin-left: auto;
+	text-align: center;
+	margin-right: auto;
+}
+
+#overlay-content img {
+	width: 100%;
+	height: 100%;
+}
+
+.wp-caption {
+	max-width: 100%;
+	position: relative;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.wp-caption-text {	
+	background-color: rgba(255, 255, 255, 0.87);
+	position: absolute;
+	bottom: 0;
+	width: 96%;
+	padding: 2%;
+	margin: 0px;
+}
+
+.wp-caption img {
+	width: 100%;
+}
+
+.wp-caption.alignleft {
+	margin-right: 10px;
+}
+
+.wp-caption.alignright {
+	margin-left: 10px;
+}
+
+.gallery {
+	border: 1px solid #c7c7c7;
+}
+
+.social a {
+	margin-right: 10px;
+}
+
+.social {
+	float: left;
+}
+
+.footer-nav {
+	float: right;
+	text-align: right;
+	margin-top: -9px;
+}
+
+#back {	
+	position: absolute;
+	left: -40px;
+	height: 100%;
+	width: 32px;
+}
+
+#back img {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+}
+
+#back:hover {
+	background-color: #f4f4f4;
+	cursor: pointer;
+}
